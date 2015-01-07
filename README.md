@@ -6,23 +6,21 @@
 (Only as info: link to remove old node.js from MAC https://github.com/DomT4/scripts/blob/master/OSX_Node_Removal/terminatenode.sh)
 ### Installing yo and some generators
 Install the required tools: `yo`, `gulp`, `bower`
-```
-npm install -g yo bower grunt-cli gulp
+```bash
+$ npm install -g yo bower grunt-cli gulp
 ```
 
 Install `generator-gulp-angular`:
-```
-npm install -g generator-gulp-angular
-```
-
-Make a new directory, and `cd` into it:
-```
-mkdir rdrive_ng && cd $_
+```bash
+$ npm install -g generator-gulp-angular
 ```
 
-Run `yo gulp-angular`, optionally passing an app name:
-```
-yo gulp-angular rdrive_ng
+Clone and `cd` into [project_dir]:
+
+Install all dependencies:
+
+```bash
+$ npm install
 ```
 
 ## Use Gulp tasks
