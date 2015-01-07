@@ -15,7 +15,7 @@ Install `generator-gulp-angular`:
 $ npm install -g generator-gulp-angular
 ```
 
-Clone and `cd` into [project_dir]:
+Clone and `cd` into `[project_dir]`:
 
 Install all dependencies:
 
