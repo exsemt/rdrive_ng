@@ -21,6 +21,7 @@ Install all dependencies:
 
 ```bash
 $ npm install
+$ bower install
 ```
 
 ## Use Gulp tasks
