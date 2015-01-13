@@ -1,6 +1,12 @@
 'use strict';
+/*jshint esnext: true */
 
-angular.module('rdriveNg')
-  .controller('NavbarCtrl', function ($scope) {
+class NavbarCtrl {
+  constructor ($scope) {
     $scope.date = new Date();
-  });
+  }
+}
+
+NavbarCtrl.$inject = ['$scope'];
+
+export default NavbarCtrl;

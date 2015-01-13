@@ -34,16 +34,10 @@
         "module": "ngRoute"
       },
       "ui": {
-        "name": "bootstrap-sass-official",
-        "version": "~3.3.1",
-        "key": "bootstrap",
-        "module": null
-      },
-      "bootstrapComponents": {
-        "name": "angular-bootstrap",
-        "version": "0.12.x",
-        "key": "ui-bootstrap",
-        "module": "ui.bootstrap"
+        "name": "angular-material",
+        "version": "~0.5.1",
+        "key": "angular-material",
+        "module": "ngMaterial"
       },
       "cssPreprocessor": {
         "key": "node-sass",
@@ -52,11 +46,11 @@
         "version": "~1.1.0"
       },
       "jsPreprocessor": {
-        "key": "none",
+        "key": "6to5",
         "extension": "js",
-        "srcExtension": "js",
-        "module": null,
-        "version": null
+        "srcExtension": "es6",
+        "module": "gulp-6to5",
+        "version": "~1.0.2"
       },
       "htmlPreprocessors": [
         {
@@ -73,6 +67,12 @@
           }
         }
       ],
+      "bootstrapComponents": {
+        "name": null,
+        "version": null,
+        "key": null,
+        "module": null
+      },
       "foundationComponents": {
         "name": null,
         "version": null,

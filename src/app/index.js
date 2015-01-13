@@ -1,6 +1,13 @@
 'use strict';
+/*jshint esnext: true */
 
-angular.module('rdriveNg', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ngRoute', 'ui.bootstrap'])
+import MainCtrl from './main/main.controller';
+import NavbarCtrl from '../components/navbar/navbar.controller';
+
+angular.module('rdriveNg', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ngRoute', 'ngMaterial'])
+  .controller('MainCtrl', MainCtrl)
+  .controller('NavbarCtrl', NavbarCtrl)
+  
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {

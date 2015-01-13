@@ -1,7 +1,8 @@
 'use strict';
+/*jshint esnext: true */
 
-angular.module('rdriveNg')
-  .controller('MainCtrl', function ($scope) {
+class MainCtrl {
+  constructor ($scope) {
     $scope.awesomeThings = [
       {
         'title': 'AngularJS',
@@ -46,22 +47,22 @@ angular.module('rdriveNg')
         'logo': 'jquery.jpg'
       },
       {
-        'title': 'Bootstrap',
-        'url': 'http://getbootstrap.com/',
-        'description': 'Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.',
-        'logo': 'bootstrap.png'
-      },
-      {
-        'title': 'Angular UI Bootstrap',
-        'url': 'http://angular-ui.github.io/bootstrap/',
-        'description': 'Bootstrap components written in pure AngularJS by the AngularUI Team.',
-        'logo': 'ui-bootstrap.png'
+        'title': 'Angular Material Design',
+        'url': 'https://material.angularjs.org/#/',
+        'description': 'The Angular reference implementation of the Google\'s Material Design specification.',
+        'logo': 'angular-material.png'
       },
       {
         'title': 'Sass (Node)',
         'url': 'https://github.com/sass/node-sass',
         'description': 'Node.js binding to libsass, the C version of the popular stylesheet preprocessor, Sass.',
         'logo': 'node-sass.png'
+      },
+      {
+        'title': 'ES6 (6to5)',
+        'url': 'https://github.com/6to5/6to5',
+        'description': 'Turns ES6+ code into vanilla ES5, so you can use next generation features today.',
+        'logo': '6to5.png'
       },
       {
         'key': 'jade',
@@ -71,7 +72,12 @@ angular.module('rdriveNg')
         'logo': 'jade.png'
       }
     ];
-    angular.forEach($scope.awesomeThings, function(awesomeThing) {
+    $scope.awesomeThings.forEach(function(awesomeThing) {
       awesomeThing.rank = Math.random();
     });
-  });
+  }
+}
+
+MainCtrl.$inject = ['$scope'];
+
+export default MainCtrl;
