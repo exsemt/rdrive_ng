@@ -1,10 +1,6 @@
-div(layout="row")
-  div(flex)
+div(layout="row", class="table", ng-controller="PhotosCtrl")
+  div(flex, ng-repeat="photo in photos")
     [flex]
-    img(src="http://fc02.deviantart.net/fs9/i/2006/066/6/6/muscle_Car_by_ArcAngelTyrael.jpg")
-  div(flex)
-    [flex]
-    img(src="http://fc02.deviantart.net/fs9/i/2006/066/6/6/muscle_Car_by_ArcAngelTyrael.jpg")
-  div(flex, hide-sm)
-    [flex]
-    img(src="http://fc02.deviantart.net/fs9/i/2006/066/6/6/muscle_Car_by_ArcAngelTyrael.jpg")
+    p
+      {{photo.id}}
+    img(src="{{photo.src}}")

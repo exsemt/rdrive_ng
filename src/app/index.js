@@ -19,7 +19,7 @@ angular.module('rdriveNg', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/photos/photos_table.html',
+        templateUrl: 'app/photos/photos.html',
         controller: 'PhotosCtrl'
       })
       .otherwise({
