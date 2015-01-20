@@ -1,16 +1,23 @@
 <nav class="navbar navbar-static-top navbar-inverse" ng-controller="NavbarCtrl">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="https://github.com/Swiip/generator-gulp-angular">
-        <span class="glyphicon glyphicon-home"></span> Gulp Angular
+      <a class="navbar-brand" href="#/">
+        <span class="glyphicon glyphicon-home"></span> Reactive Drive
       </a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav">
-        <li class="active"><a ng-href="#">Home</a></li>
-        <li><a ng-href="#">About</a></li>
+        <li class="active"><a ng-href="#/">Home</a></li>
+        <li><a ng-href="#/photos">Photos</a></li>
         <li><a ng-href="#">Contact</a></li>
+<!--
+        <li ng-class="{active: isActive('{{menuItem.url}}')}" ng-repeat="menuItem in menuItems">
+          <a ng-href="#{{menuItem.url}}" title="{{menuItem.title}}">
+            {{menuItem.name}}
+          </a>
+        </li>
+-->
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
