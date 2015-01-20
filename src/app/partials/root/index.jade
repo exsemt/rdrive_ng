@@ -1,0 +1,18 @@
+div(class="jumbotron text-center")
+  h1 Reactive Drive
+  p(class="lead") Your best friend!
+  img(src="assets/images/yeoman.png" alt="I'm Yeoman")
+
+div(class="row")
+  div(class="col-sm-6 col-md-4",  ng-repeat="category in categories | orderBy:'rank'")
+    div(class="thumbnail")
+      img(class="pull-right", ng-src="assets/images/{{category.logo}}", alt="{{category.title}}")
+      div(class="caption")
+      h3
+        {{category.title}}
+      p
+        {{category.description}}
+      p
+        a(ng-href="{{category.url}}")
+          {{category.url}}
+
