@@ -1,26 +1,18 @@
 'use strict';
 /*jshint esnext: true */
 
-/*
 import MainCtrl from './main/main.controller';
 import NavbarCtrl from '../components/navbar/navbar.controller';
-*/
 
-import PhotosCtrl from './photos/photos.controller';
-
-angular.module('rdriveNg', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ngRoute', 'ngMaterial'])
-/*
+angular.module('rdriveNg', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ngRoute', 'ui.bootstrap'])
   .controller('MainCtrl', MainCtrl)
   .controller('NavbarCtrl', NavbarCtrl)
-  */
-
-  .controller('PhotosCtrl', PhotosCtrl)
-
+  
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'app/photos/photos.html',
-        controller: 'PhotosCtrl'
+        templateUrl: 'app/main/main.html',
+        controller: 'MainCtrl'
       })
       .otherwise({
         redirectTo: '/'
